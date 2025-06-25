@@ -317,141 +317,51 @@
       <img class="about-bottom-decor" src="images/about-bottom.png" alt="" />
     </section>
 
+
+
+
+
     <section class="work">
       <div class="container">
         <h2 class="work__title">Мои работы</h2>
         <div class="work__wrapper-top">
           <div class="work__box">
-            <!-- Ваше изображение с добавленным классом для обработки клика -->
-<div class="work__box-img-container video-thumbnail">
-  <img src="images/work1.png" alt="" data-video-id="2de8b6150ee573b43f106b3b0f539a9e" />
-</div>
-
-<!-- Модальное окно для видео -->
-<div class="modal" id="video-modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <iframe id="rutube-iframe" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>
-
-<style>
-  /* Стили модального окна (можно настроить под ваш дизайн) */
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal-content {
-    position: relative;
-    width: 80%;
-    max-width: 800px;
-  }
-
-  .close {
-    position: absolute;
-    top: -40px;
-    right: 0;
-    color: white;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .close:hover {
-    color: #ccc;
-  }
-
-  #rutube-iframe {
-    width: 100%;
-    height: 450px;
-    border: none;
-  }
-</style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const thumbnail = document.querySelector('.video-thumbnail');
-    const modal = document.getElementById('video-modal');
-    const closeBtn = document.querySelector('.close');
-    const iframe = document.getElementById('rutube-iframe');
-
-    thumbnail.addEventListener('click', function() {
-      const videoId = this.querySelector('img').getAttribute('data-video-id');
-      iframe.src = `https://rutube.ru/embed/${videoId}/`;
-      modal.style.display = 'flex';
-      document.body.style.overflow = 'hidden'; // Блокируем прокрутку страницы
-    });
-
-    closeBtn.addEventListener('click', function() {
-      modal.style.display = 'none';
-      iframe.src = '';
-      document.body.style.overflow = ''; // Восстанавливаем прокрутку
-    });
-
-    modal.addEventListener('click', function(e) {
-      if (e.target === modal) {
-        modal.style.display = 'none';
-        iframe.src = '';
-        document.body.style.overflow = '';
-      }
-    });
-  });
-</script>
-
-
-
-
+            <div class="work__box-img-container" onclick="openVideoModal('https://rutube.ru/video/2de8b6150ee573b43f106b3b0f539a9e/')">
+              <img style="border-radius: 20px;" src="images/preview/1.png" alt="" />  
+            </div>
             <p class="work__box-subtitle">Тизер фильма «Выбор»</p>
           </div>
           <div class="work__box">
-            <a href="https://rutube.ru/video/0230e6f31224e62b0ad54d8b264f03ef/">
-            <div class="work__box-img-container">
-              <img src="images/work2.png" alt="" />
+            <div class="work__box-img-container" onclick="openVideoModal('https://rutube.ru/video/0230e6f31224e62b0ad54d8b264f03ef/')">
+              <img style="border-radius: 20px;" src="images/preview/New_year.jpg" alt="" />
             </div>
-          </a>
             <p class="work__box-subtitle">Музыкальный клип «С Новым годом, любимые!»</p>
           </div>
           <div class="work__box">
-            <a href="https://rutube.ru/video/1e97bd6398a76cdd032ea59687e7977f/">
-            <div class="work__box-img-container">
-              <img src="images/work3.png" alt="" />
+            <div class="work__box-img-container" onclick="openVideoModal('https://rutube.ru/video/1e97bd6398a76cdd032ea59687e7977f/')">
+              <img style="border-radius: 20px;" src="images/preview/Plaksa.jpg" alt="" />
             </div>
-          </a>
             <p class="work__box-subtitle">Кавер на песню Нины Жуковой «Девочка плакса»</p>
           </div>
         </div>
         <div class="work__wrapper-bottom">
           <div class="work__box">
-            <a href="https://rutube.ru/video/fe1e3def372d07b03128925c23ffbbd6/">
-            <div class="work__box-img-container">
-              <img src="images/work4.png" alt="" />
+            <div class="work__box-img-container" onclick="openVideoModal('https://rutube.ru/video/fe1e3def372d07b03128925c23ffbbd6/')">
+              <img style="border-radius: 20px; right: -10px;" src="images/preview/Ostatsya.jpg" alt="" />
             </div>
-          </a>
             <p class="work__box-subtitle">
               «Остаться с тобой..» Музыкальный клип на кавер на песню В.Цоя «Группа крови»
             </p>
           </div>
           <div class="work__box">
-            <a href="https://rutube.ru/video/5631bb3d1705af5584193444bcb9aa4c/">
-            <div class="work__box-img-container">
-              <img src="images/work5.png" alt="" />
+            <div class="work__box-img-container" onclick="openVideoModal('https://rutube.ru/video/5631bb3d1705af5584193444bcb9aa4c/')">
+              <img style="border-radius: 20px; right: -10px;" src="images/preview/Samiy.jpg" alt="" />
             </div>
-          </a>
             <p class="work__box-subtitle">
               Музыкальный клип на кавер на песню «Самый дорогой человек»
             </p>
           </div>
         </div>
-
         <div class="work-descr">
           <img src="images/work-decor-text.png" alt="" />
           <p>
@@ -461,6 +371,122 @@
         </div>
       </div>
     </section>
+
+
+<!-- Модальное окно для Rutube -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeVideoModal()">&times;</span>
+    <div id="rutubePlayer" class="rutube-iframe-container"></div>
+  </div>
+</div>
+
+<script>
+function openVideoModal(videoUrl) {
+  const modal = document.getElementById('videoModal');
+  const playerContainer = document.getElementById('rutubePlayer');
+  
+  // Извлекаем ID видео из URL Rutube
+  const videoId = extractRutubeVideoId(videoUrl);
+  
+  // Создаем iframe с плеером Rutube
+  playerContainer.innerHTML = `
+    <iframe 
+      src="https://rutube.ru/play/embed/${videoId}"
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+    ></iframe>
+  `;
+  
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeVideoModal() {
+  const modal = document.getElementById('videoModal');
+  const playerContainer = document.getElementById('rutubePlayer');
+  
+  // Очищаем iframe при закрытии
+  playerContainer.innerHTML = '';
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Функция для извлечения ID видео из URL Rutube
+function extractRutubeVideoId(url) {
+  // Пример URL: https://rutube.ru/video/2de8b6150ee573b43f106b3b0f539a9e/
+  const parts = url.split('/');
+  return parts[parts.length - 2]; // Берем предпоследнюю часть URL
+}
+</script>
+
+<style>
+/* Стили для модального окна и iframe */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  position: relative;
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+}
+
+.close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rutube-iframe-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 соотношение сторон */
+  height: 0;
+  overflow: hidden;
+}
+
+.rutube-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     <section class="my">
       <div class="container">
