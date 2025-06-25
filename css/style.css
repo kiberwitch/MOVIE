@@ -380,15 +380,9 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
 
 .test-block {
   position: absolute;
-<<<<<<< HEAD
-  top: 380px;
-  width: 330px;
-  height: 70px;
-=======
   top: 400px;
   width: 300px;
   height: 50px;
->>>>>>> ae676d5bf991ccd743a03859473e0bcca884a7e9
   background-color: #fff;
 }
 
