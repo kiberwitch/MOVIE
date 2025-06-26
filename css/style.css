@@ -56,6 +56,7 @@ a {
   font-family: inherit;
 }
 
+
 .header {
   background-color: #ff7a1b;
   padding: 92px 143px;
@@ -147,6 +148,164 @@ a {
   z-index: 1000;
 }
 
+
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+
+
+.phone {
+color: #ff7a1b;
+}
+
+
+.ico-map {
+  display: none;
+}
+
+.header__bottom_mob {
+  display: none;
+}
+
+
+  .header {
+    padding: 30px 15px;
+    height: 620px;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+  .header__top {
+    max-width: 100%;
+    gap: 15px;
+    margin-bottom: 0px;
+  }
+  
+  .header__top-img {
+    position: relative;
+    left: -120px;
+    width: 90px;
+    margin-bottom: 10px;
+  }
+  
+  .header__top-p-wrapper {
+    position: relative;
+    top: -80px;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    gap: 5px;
+  }
+  
+  .header__top-p-wrapper p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .header__top-p-wrapper img {
+    width: 16px;
+  }
+  
+  .header__center {
+    position: relative;
+    top
+    left: 0;
+  }
+  
+  .header__center-title {
+    font-size: 48px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .header__center-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .header__center-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .header__center-decor {
+    display: none;
+  }
+  
+
+.header__bottom_mob_p {
+  position: relative;
+  top: -15px;
+  left: -14px;
+}
+
+  .header__bottom {
+    top: -30px;
+    margin-bottom: 30px;
+    background-image: url('../images/header-vector.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+  }
+  
+  .header__bottom p {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 100%;
+  }
+  
+  .header__bottom::after {
+    display: none;
+  }
+  
+  .header__bottom-btn {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    padding: 12px;
+    margin-top: 20px;
+  }
+  
+  .header__bottom-btn-text {
+    font-size: 16px;
+  }
+  
+  /* Скрываем декор элементы на мобильных */
+  .header__bottom-img-decor,
+  .header__plenka-left-decor,
+  .header__plenka-right-decor,
+  .header__bottom-line {
+    display: none;
+  }
+  
+  .header__photo-decor {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+  .header__center-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
+  .header__center-name {
+    font-size: 20px;
+  }
+}
+
+
+
+
 .wrapper-bth {
   width: 260px;
   position: relative;
@@ -163,7 +322,6 @@ a {
   width: 100%;
   cursor: pointer;
   padding: 10px 10px;
-  background-color: #fff;
 }
 
 .header__bottom-btn-bg {
@@ -1436,7 +1594,7 @@ right: 1010px;
   margin: 0 auto;
   position: relative;
   margin-bottom: 20px;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .container-z-index {
@@ -2333,9 +2491,7 @@ right: 1010px;
     max-width: 212px;
     margin-bottom: 46px;
   }
-  .header__bottom-btn {
-    line-height: normal;
-  }
+
 
   .project__title {
     font-size: 32px;
@@ -2839,16 +2995,13 @@ right: 1010px;
     display: none;
   }
   .header__bottom p {
-    background-color: #fff1d9;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
     font-size: 18px;
   }
 
-  .header__top {
-    margin-bottom: 30px;
-  }
+  
 
   .header {
     padding: 30px 0;
