@@ -150,217 +150,6 @@ a {
 
 
 
-/* Мобильная версия */
-@media (max-width: 768px) {
-
-
-  .header__bottom-btn {
-    border-radius: 15.3px; /* уменьшено на 10% */
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    line-height: 39.6px; /* уменьшено на 10% */
-    font-size: 21.6px; /* уменьшено на 10% */
-    position: relative;
-    z-index: 100;
-    width: 100%;
-    cursor: pointer;
-    padding: 9px 9px; /* уменьшено на 10% */
-  }
-  
-  .header__bottom-btn-bg {
-    width: 234.9px; /* уменьшено на 10% */
-    height: 57.6px; /* уменьшено на 10% */
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: white;
-    border-radius: 15.3px; /* уменьшено на 10% */
-  }
-  
-  .header__bottom-btn-border {
-    width: 234.9px; /* уменьшено на 10% */
-    height: 57.6px; /* уменьшено на 10% */
-    position: absolute;
-    left: 5.4px; /* уменьшено на 10% */
-    top: 6.3px; /* уменьшено на 10% */
-    border-radius: 15.3px; /* уменьшено на 10% */
-    border: 1px #2A2A2A solid;
-  }
-  
-  .header__bottom-btn-text {
-    position: absolute;
-    width: 270px; /* уменьшено на 10% */
-    left: -18px; /* уменьшено на 10% */
-    top: 9px; /* уменьшено на 10% */
-    text-align: center;
-    color: #2A2A2A;
-    font-size: 21.6px; /* уменьшено на 10% */
-    font-family: Oswald;
-    font-weight: 600;
-    line-height: 39.6px; /* уменьшено на 10% */
-    word-wrap: break-word;
-  }
-
-
-
- 
-.header__center {
-  left: 0;
-}
-
-
-
-  .header__photo-decor {
-    display: block;
-    width: 90%;
-    margin-right: 20px;
-    margin-top: 530px;
-  }
-
-
-.phone {
-color: #ff7a1b;
-}
-
-
-.ico-map {
-  display: none;
-}
-
-.header__bottom_mob {
-  display: none;
-}
-
-
-  .header {
-    padding: 30px 15px;
-    height: 920px;
-  }
-  
-  .container {
-    padding: 0;
-  }
-  
-  .header__top {
-    max-width: 100%;
-    gap: 15px;
-    margin-bottom: 0px;
-  }
-  
-  .header__top-img {
-    position: relative;
-    left: -120px;
-    width: 90px;
-    margin-bottom: 10px;
-  }
-  
-  .header__top-p-wrapper {
-    position: relative;
-    top: -100px;
-    margin-right: 10px;
-    font-size: 16px;
-    line-height: 24px;
-    gap: 5px;
-  }
-  
-  .header__top-p-wrapper p {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .header__top-p-wrapper img {
-    width: 16px;
-  }
-  
-
-  
-  .header__center-title {
-    font-size: 48px;
-    line-height: 50px;
-  }
-  
-  .header__center-subtitle {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  
-  .header__center-name {
-    font-size: 24px;
-    line-height: 30px;
-  }
-  
-  .header__center-decor {
-    display: none;
-  }
-  
-
-.header__bottom_mob_p {
-  position: relative;
-  top: -15px;
-  left: -14px;
-}
-
-  .header__bottom {
-    top: -30px;
-    margin-bottom: 30px;
-    background-image: url('../images/header-vector.png');
-    background-size: contain;
-    background-repeat: no-repeat; 
-  }
-  
-  .header__bottom p {
-    font-size: 16px;
-    line-height: 20px;
-    max-width: 100%;
-  }
-  
-  .header__bottom::after {
-    display: none;
-  }
-  
-  .header__bottom-btn {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 280px;
-    text-align: center;
-    position: relative;
-    top: -20px;
-    padding: 12px;
-    margin-top: 20px;
-  }
-  
-  .header__bottom-btn-text {
-    font-size: 16px;
-  }
-  
-  /* Скрываем декор элементы на мобильных */
-  .header__bottom-img-decor,
-  .header__plenka-left-decor,
-  .header__plenka-right-decor,
-  .header__bottom-line {
-    display: none;
-  }
-  
-
-}
-
-/* Для очень маленьких экранов */
-@media (max-width: 480px) {
-  .header__center-title {
-    font-size: 36px;
-    line-height: 40px;
-  }
-  
-  .header__center-name {
-    font-size: 20px;
-  }
-}
-
-
-
-
 .wrapper-bth {
   width: 260px;
   position: relative;
@@ -1322,7 +1111,7 @@ right: 1010px;
 }
 
 .my__box-bottom-title-box img {
-  position: absolute;
+
   top: 10px;
   right: 0;
 }
@@ -2163,6 +1952,235 @@ right: 1010px;
   bottom: 0;
   width: 100%;
 }
+
+
+
+
+/*  NEW STYLE CSS  */
+
+
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+
+
+
+  .cart__title {
+    font-size: 35px;
+  }
+
+
+
+
+
+
+.what__right-title, .what__right-subtitle, .my__box-bottom-title-box, 
+.my__box-bottom-subtitle, .info__text, .text__text-subtitle-two, .moviemaker__wrapper {
+  padding-left: 10px;
+}
+
+.my__box-bottom-img-decor--four {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.holywood {
+  margin-top: 100px;
+}
+
+
+.gift__wrapper-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+.why {
+  margin-bottom: 30px;
+}
+
+
+.holywood__form-title p span {
+display: none;
+}
+
+.test {
+  display: none;
+}
+
+  
+ 
+.header__center {
+  left: 0;
+}
+
+
+
+  .header__photo-decor {
+    display: block;
+    width: 90%;
+    margin-right: 20px;
+    margin-top: 485px;
+  }
+
+
+.phone {
+color: #ff7a1b;
+}
+
+
+.ico-map {
+  display: none;
+}
+
+.header__bottom_mob {
+  display: none;
+}
+
+
+  .header {
+    padding: 30px 15px;
+    height: 920px;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+  .header__top {
+    max-width: 100%;
+    gap: 15px;
+    margin-bottom: 0px;
+  }
+  
+  .header__top-img {
+    position: relative;
+    left: -120px;
+    width: 90px;
+    margin-bottom: 10px;
+  }
+  
+  .header__top-p-wrapper {
+    position: relative;
+    top: -100px;
+    margin-right: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    gap: 5px;
+  }
+  
+  .header__top-p-wrapper p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .header__top-p-wrapper img {
+    width: 16px;
+  }
+  
+
+  
+  .header__center-title {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  
+  .header__center-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .header__center-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .header__center-decor {
+    display: none;
+  }
+  
+
+.header__bottom_mob_p {
+  position: relative;
+  top: -15px;
+  left: -14px;
+}
+
+  .header__bottom {
+    top: -30px;
+    margin-bottom: 30px;
+    background-image: url('../images/header-vector.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+  }
+  
+  .header__bottom p {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 100%;
+  }
+  
+  .header__bottom::after {
+    display: none;
+  }
+  
+  .header__bottom-btn {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    padding: 12px;
+    margin-top: 20px;
+  }
+  
+  .header__bottom-btn-text {
+    font-size: 16px;
+  }
+  
+  /* Скрываем декор элементы на мобильных */
+  .header__bottom-img-decor,
+  .header__plenka-left-decor,
+  .header__plenka-right-decor,
+  .header__bottom-line {
+    display: none;
+  }
+  
+
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+  .header__center-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
+  .header__center-name {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 2000px) {
   .gift-bottom-decor {
@@ -3093,7 +3111,7 @@ right: 1010px;
 
 @media (max-width: 428px) {
   .gift-bottom-decor {
-    top: 595px;
+    top: 495px;
   }
 }
 
@@ -3111,7 +3129,7 @@ right: 1010px;
 
 @media (max-width: 382px) {
   .gift-bottom-decor {
-    top: 751px;
+    top: 631px;
   }
 }
 
