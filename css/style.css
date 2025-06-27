@@ -261,7 +261,7 @@ z-index: 300;
   max-width: 812px;
   margin: 0 auto;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .arrow-right {
@@ -2175,6 +2175,36 @@ color: #ff7a1b;
   }
   
 
+
+.what {
+  display: none;
+}
+
+  .cart {
+    margin-bottom: 40px;
+  }
+
+
+
+
+
+.info {
+  top: -45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /* Для очень маленьких экранов */
@@ -2605,7 +2635,7 @@ color: #ff7a1b;
   }
 
   .project {
-    padding-bottom: 0;
+    padding-bottom: 70px;
   }
   .project__wrapper {
     position: static;
