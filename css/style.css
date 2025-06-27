@@ -380,6 +380,15 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
   z-index: 3000;
 }
 
+.test-bottom {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3000;
+}
+
+
+
 .test-block {
   position: absolute;
   top: 390px;
@@ -1954,7 +1963,9 @@ right: 1010px;
 }
 
 
-
+.holywood__form-title-desktop {
+  display: none;
+}
 
 /*  NEW STYLE CSS  */
 
@@ -1964,12 +1975,25 @@ right: 1010px;
 @media (max-width: 768px) {
 
 
+.holywood__form-title-desktop {
+  display: block;
+}
+
 
   .cart__title {
     font-size: 35px;
   }
 
 
+
+.test-bottom {
+  display: none;
+}
+
+
+.holywood__form-title-mob {
+  display: none;
+}
 
 
 
@@ -2008,9 +2032,6 @@ right: 1010px;
 display: none;
 }
 
-.test {
-  display: none;
-}
 
   
  
