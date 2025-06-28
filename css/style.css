@@ -1915,12 +1915,19 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
   display: none;
 }
 
-
+.you-bottom-line {
+  position: absolute;
+  width: 1920px;
+  bottom: 30px;
+  transform: rotate(0.3deg);
+}
 
 /*  NEW STYLE CSS  */
 
 /* Мобильная версия */
 @media (max-width: 768px) {
+
+
   .stop-line,
   .moviemaker-line-top {
     display: none;
