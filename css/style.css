@@ -5,8 +5,9 @@
 }
 
 /* Основной стиль для плавного скролла */
-html {
+html,body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Дополнительные настройки */
@@ -576,7 +577,7 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
   width: 100%;
 }
 
-.you-bottom-line {
+.you-bottom-li  {
   position: absolute;
   left: 0;
   right: 0;
@@ -1912,6 +1913,11 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
 
 /* Мобильная версия */
 @media (max-width: 768px) {
+
+
+
+
+
 
 .stop-line, .moviemaker-line-top {
   display: none;
