@@ -1947,6 +1947,7 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
   }
 
   .stop-back {
+    display: block;
     position: absolute;
     left: -17px;
     top: 5px;
