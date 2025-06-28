@@ -911,7 +911,7 @@ right: 1010px;
 @media (max-width: 1200px) {
   .about-container {
     width: 100%;
-    height: auto;
+    height: 1600px;
     padding-bottom: 600px; /* Место для фото */
   }
   
@@ -919,7 +919,7 @@ right: 1010px;
   .about-border {
     width: calc(100% - 40px);
     left: 20px;
-    height: 2000px;
+    height: 1700px;
     min-height: 500px;
   }
   
@@ -1682,6 +1682,7 @@ right: 1010px;
 .wrapper-bth--why {
 }
 .header__bottom-btn {
+
 }
 .wrapper-bth-decor {
 }
@@ -1963,9 +1964,11 @@ right: 1010px;
 }
 
 
-.holywood__form-title-desktop {
+.holywood-btn {
   display: none;
 }
+
+
 
 /*  NEW STYLE CSS  */
 
@@ -1973,6 +1976,11 @@ right: 1010px;
 
 /* Мобильная версия */
 @media (max-width: 768px) {
+
+  .holywood-btn {
+    display: block;
+  }
+  
 
 
 .holywood__form-title-desktop {
@@ -1987,11 +1995,6 @@ right: 1010px;
 
 
 .test-bottom {
-  display: none;
-}
-
-
-.holywood__form-title-mob {
   display: none;
 }
 
@@ -2190,6 +2193,49 @@ color: #ff7a1b;
 
 .info {
   top: -45px;
+}
+
+
+
+
+
+.work__wrapper-bottom {
+
+  margin-bottom: 0px;
+}
+
+.work {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+.my {
+
+  margin-bottom: 30px;
+}
+
+
+
+
+.photo {
+  margin-bottom: 0px;
+}
+
+
+
+.stop__wrapper-left--one::before {
+
+  width: 951px;
+
+
+  position: absolute;
+  left: -23px;
+  top: -8px;
+
 }
 
 
@@ -2684,6 +2730,7 @@ color: #ff7a1b;
     font-size: 32px;
     line-height: 33px;
     margin-bottom: 50px;
+    padding-top: 60px;
   }
 
   .gift__wrapper-li p {
@@ -3008,7 +3055,7 @@ color: #ff7a1b;
 }
 @media (max-width: 583px) {
   .stop__wrapper-left--one::before {
-    width: 246px;
+  display: none;
   }
 
   .info-top-decor {
