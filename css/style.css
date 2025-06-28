@@ -891,7 +891,7 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
   .about-border {
     width: calc(100% - 40px);
     left: 20px;
-    height: 1637px;
+    height: 1657px;
     min-height: 500px;
   }
 
@@ -1913,7 +1913,9 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
 /* Мобильная версия */
 @media (max-width: 768px) {
 
-
+.stop-line, .moviemaker-line-top {
+  display: none;
+}
 
   .holywood {
 
@@ -1922,7 +1924,7 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
 
   .about-image {
 
-    top: 15px;
+    top: 35px;
     margin-bottom: 0px;
   }
 
@@ -1938,18 +1940,34 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
 
 
 
+.stop-back {
+  position: absolute;
+  left: -17px;
+  top: 5px;
+  z-index: -100;
+}
+
+.info {
+  padding-bottom: 60px;
+}
+
+.about {
+  padding-bottom: 120px;
+}
 
 
+.my__wrapper {
+  margin-top: 15px;
+}
 
 
+.about__title {
+  margin-bottom: 0px;
+}
 
-
-
-
-
-
-
-
+.footer__wrapper {
+  padding-bottom: 0px;
+}
 
 
 .gift-line-bottom {
@@ -2403,7 +2421,7 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
   }
 
   .footer-bottom-background {
-    width: auto;
+    display: none;
   }
 
   .footer__left-right-title {
@@ -2478,7 +2496,7 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
     margin-bottom: 31px;
   }
   .you {
-    padding-bottom: 150px;
+    padding-bottom: 70px;
   }
   .you__ul {
     max-width: 850px;
