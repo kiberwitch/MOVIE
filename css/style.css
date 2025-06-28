@@ -1662,7 +1662,7 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
   .why-container {
     position: absolute;
     top: 100px;
-    left: 210px;
+    left: 200px;
     width: 1000px;
     display: flex;
     gap: 300px;
@@ -1681,7 +1681,7 @@ iframe[name='ya-form-684310a1493639f66cf7f047'] {
   .why-back {
     position: absolute;
     bottom: -150px;
-    right: 00px;
+    right: -0px;
     width: 1920px;
     margin: 0 auto;
   }
